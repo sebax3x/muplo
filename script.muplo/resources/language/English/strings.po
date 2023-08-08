@@ -1,0 +1,11 @@
+# script.audio.profiles language file
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+#: Settings
+msgctxt "#32001"
+msgid "ID"
+msgstr ""

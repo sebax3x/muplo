@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.muplo" name="Muplo Repository" version="1.0.0" provider-name="Regss">
+    <extension point="xbmc.addon.repository" name="Muplo Repository">
+        <info compressed="true">https://github.com/sebax3x/muplo/master/addons.xml</info>
+        <checksum>https://github.com/sebax3x/muplo/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/sebax3x/muplo/master</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Muplo Repository</summary>
+        <description>Muplo Repository</description>
+        <website>http://muplo.com</website>
+        <license>MIT</license>
+        <platform>all</platform>
+    </extension>
+</addon>

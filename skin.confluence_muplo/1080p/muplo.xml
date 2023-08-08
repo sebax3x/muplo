@@ -1,0 +1,102 @@
+<includes>
+    <include name="muplo">
+        <control type="group" id="58009">
+            <visible>!isEmpty(Window(10000).Property(muplo_rss))</visible>
+            <posx>0</posx>
+            <posy>640</posy>
+            <height>50</height>
+            <width>1280</width>
+            <control type="image" id="58008">
+                <description>RSS BACKGROUND</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>50</height>
+                <width>1280</width>
+                <texture>black-back.png</texture>
+            </control>
+            <control type="label" id="58005">
+                <description>RSS</description>
+                <posx>10</posx>
+                <posy>10</posy>
+                <height>30</height>
+                <width>1260</width>
+                <label>$INFO[Window(10000).Property(muplo_rss)]</label>
+                <font>font14</font>
+                <shadowcolor>ff000000</shadowcolor>
+                <scroll>true</scroll>
+            </control>
+        </control>
+        <control type="image" id="58006">
+            <description>LOGO_LEFT_TOP</description>
+            <posx>30</posx>
+            <posy>20</posy>
+            <width>120</width>
+            <height>120</height>
+            <label>-</label>
+            <texture>$INFO[Window(10000).Property(muplo_left_top_logo)]</texture>
+            <visible>!isEmpty(Window(10000).Property(muplo_left_top_logo))</visible>
+            <aspectratio align="left" aligny="top">keep</aspectratio>
+            <animation effect="fade" time="1000">Visible</animation>
+        </control>
+        <control type="image" id="58007">
+            <description>LOGO_RIGHT_TOP</description>
+            <posx>1130</posx>
+            <posy>20</posy>
+            <width>120</width>
+            <height>120</height>
+            <label>-</label>
+            <texture>$INFO[Window(10000).Property(muplo_right_top_logo)]</texture>
+            <visible>!isEmpty(Window(10000).Property(muplo_right_top_logo))</visible>
+            <aspectratio align="right" aligny="top">keep</aspectratio>
+            <animation effect="fade" time="1000">Visible</animation>
+        </control>
+        <control type="image" id="58002">
+            <description>IMAGE_BOTTOM_QUARTER</description>
+            <posx>0</posx>
+            <posy>580</posy>
+            <width>1280</width>
+            <height>140</height>
+            <label>-</label>
+            <texture>$INFO[Window(10000).Property(muplo_image_bottom_quarter)]</texture>
+            <visible>!isEmpty(Window(10000).Property(muplo_image_bottom_quarter))</visible>
+            <aspectratio align="left" aligny="bottom">keep</aspectratio>
+            <animation effect="fade" time="1000">Visible</animation>
+        </control>
+        <control type="image" id="58003">
+            <description>IMAGE_RIGHT_QUARTER</description>
+            <posx>960</posx>
+            <posy>0</posy>
+            <width>320</width>
+            <height>720</height>
+            <label>-</label>
+            <texture>$INFO[Window(10000).Property(muplo_image_right_quarter)]</texture>
+            <visible>!isEmpty(Window(10000).Property(muplo_image_right_quarter))</visible>
+            <aspectratio align="right" aligny="bottom">keep</aspectratio>
+            <animation effect="slide" start="1620" time="1000">Visible</animation>
+        </control>
+        <control type="image" id="58004">
+            <description>IMAGE_LEFT_QUARTER</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>320</width>
+            <height>720</height>
+            <label>-</label>
+            <texture>$INFO[Window(10000).Property(muplo_image_left_quarter)]</texture>
+            <visible>!isEmpty(Window(10000).Property(muplo_image_left_quarter))</visible>
+            <aspectratio align="left" aligny="bottom">keep</aspectratio>
+            <animation effect="slide" start="-340" time="1000">Visible</animation>
+        </control>
+        <control type="image" id="58001">
+            <description>IMAGE_FULL</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+            <label>-</label>
+            <texture>$INFO[Window(10000).Property(muplo_image_full)]</texture>
+            <visible>!isEmpty(Window(10000).Property(muplo_image_full))</visible>
+            <aspectratio>keep</aspectratio>
+            <animation effect="fade" time="1000">Visible</animation>
+        </control>
+    </include>
+</includes>

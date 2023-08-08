@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.muplo" name="Muplo Service" version="1.0.0" provider-name="Regss">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.schedule" />
+        <import addon="skin.confluence_muplo" />
+    </requires>
+    <extension point="xbmc.service" library="default.py" start="[login]" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Service for Muplo plugin</summary>
+        <description>Service for Muplo plugin</description>
+        <website>http://muplo.com</website>
+        <license>MIT</license>
+        <platform>all</platform>
+    </extension>
+</addon>

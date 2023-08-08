@@ -1,0 +1,52 @@
+08.08.2023
+
+Aktualizacja wtyczki mupla z pythona w wersji 2.7 do wersji 3.
+Odzyskanie źródeł scriptMuploMain.py i serviceMuploMain.py.
+
+-- repository.muplo--
+
+nie wymagało zmian
+
+--script.module.schedule--
+
+addon.xml: 
+Zmiana xbmc.python na wersję 3.0.0.
+
+--script.muplo--
+
+addon.xml: 
+Zmiana xbmc.python na wersję 3.0.0.
+
+default.py
+usunięcie metody decode('utf-8') z xbmc.translatePath()
+
+scriptMuploMain.py
+
+Użycie funkcji urllib.parse zamiast urllib do obsługi URLi w Pythonie 3.
+Użycie funkcji open z parametrem encoding='utf-8' do odczytu pliku z tekstem w kodowaniu UTF-8.
+
+--service.muplo--
+
+addon.xml: 
+Zmiana xbmc.python na wersję 3.0.0.
+
+default.py:
+
+Dodanie deklaracji kodowania # -*- coding: utf-8 -*-.
+Użycie funkcji urllib.parse zamiast urllib do obsługi URLi w Pythonie 3.
+Poprawa błędu braku importu modułu sys.
+Użycie os.path.join do łączenia ścieżek.
+
+serviceMuploMain.py:
+
+Użycie funkcji urllib.parse zamiast urllib do obsługi URLi w Pythonie 3.
+Użycie funkcji urllib.request zamiast urllib2 do pobierania zawartości z URLi w Pythonie 3.
+Poprawa błędu braku deklaracji skin.
+Używanie funkcji os.makedirs do tworzenia katalogów.
+Użycie funkcji os.path.isfile i os.path.isdir do sprawdzania, czy plik lub katalog istnieje.
+Użycie funkcji os.remove do usuwania plików.
+
+--skin.confluence_muplo--
+
+Zmiana xbmc.gui na 5.15.0
+Dodanie wsparcia dla rozdzielczości 1080p, 2k i 4k

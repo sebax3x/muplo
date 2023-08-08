@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.schedule" name="schedule" version="0.3.1" provider-name="Daniel Bader">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Python job scheduling for humans.</summary>
+        <description>An in-process scheduler for periodic jobs that uses the builder pattern for configuration. Schedule lets you run Python functions (or any other callable) periodically at pre-determined intervals using a simple, human-friendly syntax.</description>
+        <website>https://github.com/dbader/schedule</website>
+        <source>https://github.com/dbader/schedule</source>
+        <email>mail@dbader.org</email>
+        <license>MIT</license>
+        <platform>all</platform>
+    </extension>
+</addon>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting label="32001" type="text" id="m_uid" />
+    <setting label="32002" type="text" id="api" default="https://legalish.pl/mupla/api.php" visible="false" />
+</settings>
